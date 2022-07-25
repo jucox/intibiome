@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    box-shadow: 0px 4px 16px #00000014;
+    position: relative;
+}
+
+#logo {
+    width: 143px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search {
+    transition: .3s;
+    user-select: none;
+}
+
+#search:hover {
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: #389CD6;
+    height: 100vh;
+    display: none;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.nav-header a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 22px;
+    padding: 24px 40px;
+}
+
+.nav-header a:hover {
+    background: #2C8DC4;
+}
+
+.nav-header-desktop {
+    background: #389CD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.nav-header-desktop {
+    display: none;
+}
+
+.nav-header-desktop ul {
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+.nav-header-desktop ul li {
+    float: left;
+    height: 100%;
+}
+
+.nav-header-desktop a {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .3px;
+    padding: 0px 25px;
+    text-align: center;
+    height: 100%;
+}
+
+.nav-header-desktop ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-header-desktop ul li:hover ul {
+    visibility: visible;
+}
+
+.nav-header-desktop li:hover {
+    background: #2C8DC4;
+}
+
+.nav-header-desktop ul ul li a {
+    background-color: #7B7070;
+    width: 100%;
+}
+
+.nav-header-desktop ul ul li a:hover {
+    background-color: #6B6262;
+}
+
+.nav-header-desktop ul li ul {
+    display: flex;
+}
+
+.fa-angle-down {
+    padding-left: 10px;
+}
+
+#menu {
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+}
+
+#menu:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+#close {
+    display: none;
+    padding: 0px 6.5px;
+    color: #7B7070;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+}
+
+#close:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+#banner {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+    gap: 32px;
+}
+
+.title h2 {
+    color: #389CD6;
+    text-align: center;
+    font-size: 31px;
+    letter-spacing: .6px;
+    line-height: 40px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text p {
+    color: #7B7070;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 18px;
+    letter-spacing: .3px;
+    line-height: 22px;
+    max-width: 550px;
+}
+
+#icons {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0px 18px;
+}
+
+.smaller-size h2 {
+    max-width: 600px;
+}
+
+.smaller-size p {
+    max-width: 780px;
+}
+
+.about-creation {
+    margin-bottom: 80px;
+}
+
+.products-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.products-menu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0px 3px 16px #00000014;
+    max-width: 350px;
+    transition: .5s;
+}
+
+.products-menu div:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.products-menu img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.products-menu div p {
+    font-size: 20px;
+    text-align: center;
+    color: #7B7070;
+    letter-spacing: .4px;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.products-menu div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: .5px;
+    line-height: 36px;
+    width: 100%;
+    height: 75px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+#wellness {
+    background: #389CD6;
+}
+
+#wellness:hover {
+    background: #2C8DC4;
+}
+
+#active {
+    background: #309D5F;
+}
+
+#active:hover {
+    background: #24874F;
+}
+
+#agecare {
+    background: #EE6381;
+}
+
+#agecare:hover {
+    background: #D5506D;
+}
+
+#products {
+    width: 100%;
+}
+
+.discoveries {
+    margin-bottom: 80px;
+}
+
+.discoveries-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.discoveries-menu div {
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 16px #00000014;
+    transition: .5s;
+}
+
+.discoveries-menu div:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.discoveries-menu img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.discoveries-menu p {
+    color: #7B7070;
+    font-size: 20px;
+    letter-spacing: .4px;
+    line-height: 28px;
+    padding: 24px 32px 50px;
+}
+
+.discoveries button {
+    background: #389CD6;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    width: 360px;
+    height: 65px;
+    font: normal 20px 'Trebuchet MS', sans-serif;
+    color: #FFF;
+    margin: auto;
+}
+
+.discoveries button:hover {
+    background: #2C8DC4;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #389CD6;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 50px 0px 60px;
+}
+
+footer nav a {
+    color: #FFF;
+    text-decoration: none;
+    letter-spacing: .3px;
+    line-height: 22px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer nav div {
+    display: inline;
+    width: 24px;
+    border: solid 1px #FFF;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 110px;
+    margin-bottom: 70px;
+}
+
+#ulabs {
+    height: 30px;
+    transition: .3s;
+}
+
+#ulabs:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+#insta {
+    height: 40px;
+    transition: .3s;
+}
+
+#insta:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+    #menu {
+        visibility: hidden;
+    }
+
+    #search {
+        position: relative;
+        right: 10%;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .nav-header-desktop {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    #search {
+        position: relative;
+        right: 25%;
+    }
+
+    .text p {
+        font-size: 20px;
+        letter-spacing: .4px;
+        line-height: 28px;
+    }
+
+    .products-menu {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .discoveries h2 {
+        margin-top: 60px;
+    }
+
+    .discoveries-menu {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .discoveries button {
+        margin-top: 60px;
+    }
+
+    footer nav {
+        flex-direction: row;
+    }
+
+    footer nav div {
+        transform: rotate(90deg);
+    }
+
+    .links {
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 1100px;
+    }
+}
