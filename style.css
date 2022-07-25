@@ -418,6 +418,10 @@ footer nav div {
 }
 
 @media (min-width: 1200px) {
+    #logo {
+        width: 195px;
+    }
+
     #search {
         position: relative;
         right: 25%;
